@@ -21,15 +21,15 @@ export default function ContactForm() {
         <div className="contact-list">
           <div>
             <Mail size={18} />
-            hello@zainstudio.co
+            zainazad12990@gmail.co
           </div>
           <div>
             <Phone size={18} />
-            +92 312 000 0000
+            +92 312 2238398
           </div>
           <div>
             <MapPin size={18} />
-            Lahore, Pakistan
+            Karachi, Pakistan
           </div>
         </div>
       </motion.div>

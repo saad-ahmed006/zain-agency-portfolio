@@ -2,9 +2,7 @@ import { ArrowUpRight, Globe, Sparkles } from 'lucide-react'
 
 const footerLinks = ['Services', 'Work', 'Process', 'Team']
 const socialLinks = [
-  { label: 'Instagram', icon: Globe },
   { label: 'LinkedIn', icon: Sparkles },
-  { label: 'Dribbble', icon: ArrowUpRight },
 ]
 
 export default function Footer() {

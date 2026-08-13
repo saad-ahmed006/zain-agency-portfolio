@@ -92,78 +92,105 @@ export const teamMembers = [
   },
 ]
 
+export const portfolioData = {
+  videoEditingDriveUrl: 'https://drive.google.com/drive/folders/1i0suhM7cQyJh3p3A39903UOBQOUK52N5',
+  graphicDesignDriveUrl: 'https://drive.google.com/your-graphics-portfolio-folder',
+  websites: [
+    {
+      id: 'web-1',
+      title: 'Okair Jewels',
+      tagline: 'Full-Stack E-Commerce Jewellery Platform',
+      description:
+        'A premium, fully functional e-commerce web app built with custom database architecture, secure checkout, product management, and high-conversion UI.',
+      techStack: ['React.js', 'Node.js', 'Express', 'Database Architecture', 'Tailwind CSS'],
+      liveUrl: 'https://www.okair.store',
+      metrics: 'Live E-Commerce Brand',
+    },
+    {
+      id: 'web-2',
+      title: 'Royal Fumigation Services',
+      tagline: 'Industrial & Commercial Pest Control Web App',
+      description:
+        'A high-performance corporate service web app featuring dynamic service listings, booking query engine, and scalable MongoDB integration.',
+      techStack: ['Next.js', 'MongoDB', 'Tailwind CSS', 'REST API'],
+      liveUrl: 'https://www.royalfumigation.services/',
+      metrics: 'Commercial Web Application',
+    },
+    {
+      id: 'web-3',
+      title: 'HealthGru',
+      tagline: 'Digital Health & Wellness Media Platform',
+      description:
+        'A fast, SEO-optimized content platform and health blog engine engineered for maximum performance, content delivery, and reader engagement.',
+      techStack: ['Next.js', 'SEO Framework', 'React', 'Server Components'],
+      liveUrl: 'https://www.healthgru.com/',
+      metrics: 'Live Content Platform',
+    },
+  ],
+  apps: [
+    {
+      id: 'app-1',
+      name: 'Hundo App',
+      tagline: 'International On-Demand Meal & Food Delivery Solution',
+      targetAudience: 'Global / Overseas Market',
+      description:
+        'A cross-platform international meal ordering and food delivery ecosystem engineered for overseas markets with real-time tracking and seamless ordering flows.',
+      features: [
+        'International Meal Ordering System',
+        'Real-Time Order & Delivery Tracking',
+        'Multi-Currency & Secure Payments',
+        'Customer & Vendor Interactive Dashboards',
+      ],
+      techStack: ['React Native / Flutter', 'Cloud Backend', 'Live Geolocation APIs'],
+      appLink: 'https://play.google.com/store/apps/details?id=com.hundo.app&hl=en',
+    },
+    {
+      id: 'app-2',
+      name: 'Meri Gari',
+      tagline: 'Heavy Logistics & Commercial Vehicle Transport Booking',
+      targetAudience: 'Business & Fleet Operators',
+      description:
+        'An all-in-one commercial freight transport booking platform connecting businesses with Shahzore loaders, heavy freight trucks, and commercial transport for nationwide logistics.',
+      features: [
+        'Instant Commercial Transport Booking (Shahzore, Freight Trucks, Loaders)',
+        'Nationwide Logistics & Fleet Route Tracking',
+        'Upfront Rate Estimation & Driver Dispatch Engine',
+        'Enterprise Transport Management Tools',
+      ],
+      techStack: ['Mobile App Architecture', 'Real-Time Tracking', 'Restful APIs'],
+      appLink: '',
+    },
+  ],
+}
+
 export const portfolioProjects = [
   {
-    id: 'website-01',
-    title: 'Aster Labs Growth Platform',
+    id: 1,
+    title: 'Website Development',
     category: 'Website Development',
-    description: 'A premium SaaS experience designed to improve trust and increase conversion across the funnel.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Syed Muhammad Saad',
+    type: 'web_modal',
+    description: 'High-converting digital experiences and responsive business platforms.',
   },
   {
-    id: 'website-02',
-    title: 'Northstar Launch Experience',
-    category: 'Website Development',
-    description: 'A conversion-driven marketing site with clean storytelling and high-performance UX patterns.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Syed Muhammad Saad',
-  },
-  {
-    id: 'app-01',
-    title: 'CityLoop Mobile UX',
+    id: 2,
+    title: 'App Development',
     category: 'App Development',
-    description: 'A mobile-first app flow focused on onboarding clarity, retention, and user delight.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Syed Muhammad Saad',
+    type: 'app_modal',
+    description: 'Mobile experiences engineered for speed, usability, and retention.',
   },
   {
-    id: 'app-02',
-    title: 'Pulse Commerce App',
-    category: 'App Development',
-    description: 'A commerce app interface engineered to reduce friction and improve conversion on mobile.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Syed Muhammad Saad',
-  },
-  {
-    id: 'video-01',
-    title: 'Summit Brand Campaign Reel',
+    id: 3,
+    title: 'Video Editing',
     category: 'Video Editing',
-    description: 'Crisp promotional storytelling using high-energy edits, motion layering, and retention strategies.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Asadullah',
+    type: 'drive_link',
+    description: 'Campaign motion work, reels, and performance-driven storytelling.',
   },
   {
-    id: 'video-02',
-    title: 'Luma Studio Promo Video',
-    category: 'Video Editing',
-    description: 'A motion-led studio promo crafted for stronger brand recall and longer watch time.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Asadullah',
-  },
-  {
-    id: 'design-01',
-    title: 'Nova Brand Identity System',
+    id: 4,
+    title: 'Graphic Designing',
     category: 'Graphic Designing',
-    description: 'A premium visual identity with a strong brand voice, clear hierarchy, and refined presentation.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Sheikh Muzammil',
-  },
-  {
-    id: 'design-02',
-    title: 'Vanta Social Asset Kit',
-    category: 'Graphic Designing',
-    description: 'A polished social-first visual package designed for clarity, engagement, and memorable branding.',
-    thumbnail:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
-    leadSpecialist: 'Sheikh Muzammil',
+    type: 'drive_link',
+    description: 'Visual systems, campaign graphics, and brand storytelling assets.',
   },
 ]
 
