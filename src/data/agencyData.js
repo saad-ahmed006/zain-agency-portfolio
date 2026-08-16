@@ -68,7 +68,7 @@ export const teamMembers = [
     bio: 'Saad designs scalable digital systems and builds polished user experiences across web and mobile with a strong engineering mindset.',
     avatar: 'SS',
     focusAreas: ['React.js', 'Full-Stack', 'App Engineering'],
-    skills: ['React.js', 'Node.js', 'Architecture', 'UI Engineering'],
+    skills: ['React.js','Next js', 'Node.js', 'Architecture', 'UI Engineering'],
   },
   {
     id: 'asadullah',
@@ -102,7 +102,7 @@ export const portfolioData = {
       tagline: 'Full-Stack E-Commerce Jewellery Platform',
       description:
         'A premium, fully functional e-commerce web app built with custom database architecture, secure checkout, product management, and high-conversion UI.',
-      techStack: ['React.js', 'Node.js', 'Express', 'Database Architecture', 'Tailwind CSS'],
+      techStack: ['React.js', 'Node.js', 'Express',, 'Database Architecture', 'Tailwind CSS'],
       liveUrl: 'https://www.okair.store',
       metrics: 'Live E-Commerce Brand',
     },
@@ -122,10 +122,21 @@ export const portfolioData = {
       tagline: 'Digital Health & Wellness Media Platform',
       description:
         'A fast, SEO-optimized content platform and health blog engine engineered for maximum performance, content delivery, and reader engagement.',
-      techStack: ['Next.js', 'SEO Framework', 'React', 'Server Components'],
+      techStack: ['Next.js', 'SEO Framework', 'Server Components'],
       liveUrl: 'https://www.healthgru.com/',
       metrics: 'Live Content Platform',
     },
+    ,
+    {
+  id: "web-4",
+  title: "The Gross Margin",
+  tagline: "E-Commerce Analytics & Financial Margin Optimization Platform",
+  description: "A modern, high-performance web platform engineered to help businesses and e-commerce operators analyze profit margins, optimize pricing strategies, and track revenue metrics seamlessly.",
+  techStack: ["Next.js", "Tailwind CSS", "Node.js",'Express js','Mongo DB'],
+  liveUrl: "https://www.thegrossmargin.com/",
+  metrics: 'Financial Margin Optimization Platform',
+
+}
   ],
   apps: [
     {

@@ -767,6 +767,84 @@
   display: block;
 }
 
+/* Floating WhatsApp button */
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-whatsapp .ping-ring {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.12);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.14);
+  animation: wa-ping 2s infinite;
+}
+
+.floating-whatsapp .wa-btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #25D366, #1ebe57);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(6, 95, 70, 0.18);
+  border: none;
+  cursor: pointer;
+}
+
+.floating-whatsapp .wa-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(232, 97, 50, 0.12);
+}
+
+.floating-whatsapp .wa-tooltip {
+  position: absolute;
+  right: 72px;
+  bottom: 50%;
+  transform: translateY(50%);
+  background: #111827;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.floating-whatsapp:hover .wa-tooltip {
+  opacity: 1;
+  transform: translateY(50%) translateX(-6px);
+}
+
+@keyframes wa-ping {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0.08;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
 .portfolio-badge,
 .lead-chip {
   display: inline-flex;
@@ -1028,7 +1106,8 @@
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   width: 100%;
   border: 1px solid rgba(17, 24, 39, 0.08);
   border-radius: 14px;
@@ -1040,7 +1119,8 @@
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
   border-color: rgba(232, 97, 50, 0.7);
   box-shadow: 0 0 0 4px rgba(232, 97, 50, 0.12);
 }

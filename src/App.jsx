@@ -10,6 +10,7 @@ import TestimonialsSection from './components/TestimonialsSection'
 import FAQSection from './components/FAQSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </main>
 
       <Footer />
+      <FloatingWhatsApp phone="+923132167463" />
     </div>
   )
 }
