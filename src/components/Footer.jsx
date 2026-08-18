@@ -2,7 +2,7 @@ import { ArrowUpRight, Globe, Sparkles } from 'lucide-react'
 
 const footerLinks = ['Services', 'Work', 'Process', 'Team']
 const socialLinks = [
-  { label: 'LinkedIn', icon: Sparkles },
+  { label: 'LinkedIn', icon: Sparkles ,social_media_link:'https://www.linkedin.com/company/zainstudio-co/posts/?viewAsMember=true'},
 ]
 
 export default function Footer() {
@@ -32,9 +32,9 @@ export default function Footer() {
           <div>
             <h4>Social</h4>
             <ul className="footer-social">
-              {socialLinks.map(({ label, icon: Icon }) => (
+              {socialLinks.map(({ label, icon: Icon,social_media_link }) => (
                 <li key={label}>
-                  <a href="#home" aria-label={label}>
+                  <a href={social_media_link} target='_blank' aria-label={label}>
                     <Icon size={16} />
                     {label}
                     <ArrowUpRight size={14} />

@@ -93,8 +93,8 @@ export const teamMembers = [
 ]
 
 export const portfolioData = {
-  videoEditingDriveUrl: 'https://drive.google.com/drive/folders/1i0suhM7cQyJh3p3A39903UOBQOUK52N5',
-  graphicDesignDriveUrl: 'https://drive.google.com/your-graphics-portfolio-folder',
+  videoEditingDriveUrl: 'https://drive.google.com/drive/folders/1ceQeMTZuyZjawpBmv6qlzXAadVPdyehU',
+  graphicDesignDriveUrl: 'https://drive.google.com/drive/folders/1kMxWv6oSbZZoN4NomRx0Po3UjXZeR1bx',
   websites: [
     {
       id: 'web-1',
